@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Color picker | Canvas pixel manipulation</title>
+
+    <link rel="stylesheet" href="index.css" ></link>
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <!-- <div class="square" id="sqr"></div> -->
+    <div class="imageCheck">
+        <canvas id="canvas"></canvas>
+        <div id="output"></div>
+    </div>
+    <div class="result">
+        <span class="title">Tọa độ x,y:</span>
+        <div class="copy-link">
+          <input class="copy-link-input inputResult" id="xyValue" type="text" readonly></input>
+          <button type="button" class="copy-link-button xyValueCopy">
+            <span class="tooltiptext" id="myTooltip">Copy</span>
+            <object class="icon-copy" data="/svg/copy-solid.svg" width="50" height="50"></object>
+          </button>
+          <!-- <object data="/svg/copy-solid.svg" width="40" height="40"></object> -->
+        </div>
+        <!-- <span class="title">Pixel:</span><br/><input class="inputResult" id="pixelValue" type="text" readonly></input><br/> -->
+        <span class="title">Mã màu đã chọn:</span>
+        <div class="copy-link">
+          <input class="copy-link-input inputResult" id="selected-color" type="text" readonly></input>
+          <button type="button" class="copy-link-button selectedColorCopy">
+            <span class="tooltiptext" id="myTooltip">Copy</span>
+            <object class="icon-copy" data="/svg/copy-solid.svg" width="50" height="50"></object>
+          </button>
+        </div>
+<!-- 
+        //TODO: remove after used -->
+        <!-- <span class="title">Last_mousex:</span>
+        <input class="copy-link-input Last_mousex" id="Last_mousex" type="text" readonly></input>
+        <span class="title">Last_mousey:</span>
+        <input class="copy-link-input Last_mousey" id="Last_mousey" type="text" readonly></input> -->
+        <!-- <span class="title">Mousex:</span>
+        <input class="copy-link-input Mousex" id="Mousex" type="text" readonly></input>
+        <span class="title">Mousey:</span>
+        <input class="copy-link-input Mousey" id="Mousey" type="text" readonly></input> -->
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
